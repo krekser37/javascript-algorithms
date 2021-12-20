@@ -12,7 +12,7 @@ function sumOfTwo(arr, sum) {
     const numObject = {};
 
     for (let i = 0; i < arr.length; i++) {
-      let thisNum = arr[i];
+      const thisNum = arr[i];
       numObject[thisNum] = i;
     }
     
