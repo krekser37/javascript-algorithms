@@ -17,7 +17,7 @@ function sumOfTwo(arr, sum) {
     }
     
     for (var i = 0; i < arr.length; i++) {
-      let diff = sum - arr[i];
+      const diff = sum - arr[i];
       if (numObject[diff]) {
         return true;
       }

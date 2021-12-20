@@ -18,7 +18,7 @@ function palindrome(str) {
     str = str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
     str = str.replace(/\s/g, '');
     str = str.toLowerCase();
-    strReverse = str.split("").reverse().join("");
+    const strReverse = str.split("").reverse().join("");
     if (strReverse == str) { 
       return true}
     else {

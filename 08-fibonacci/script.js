@@ -10,7 +10,9 @@
 
 function fibonacci(n) {
     // Напишите код здесь
-  if (n !== 0) {
+  if (n <= 1) {
+      return 0;
+  }
   let a=0,
     b=1;
     for (let i = 3; i <= n; i ++) {
@@ -18,10 +20,7 @@ function fibonacci(n) {
     }
     return b;
 } 
-else {
-    return n;
-}
-}
+
 // Протестируйте решение, вызывая функцию с разными аргументами:
 console.log(fibonacci(0));
 console.log(fibonacci(1));
