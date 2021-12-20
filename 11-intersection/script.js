@@ -8,7 +8,13 @@
 */
 
 function intersection(arr1, arr2) {
-    // Напишите код здесь
+    let arr = [];
+   arr1.forEach((element) => {
+       if (arr2.includes(element) && !arr.includes(element)) {
+           arr.push(element);
+       }
+   })
+    return arr;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

@@ -9,6 +9,10 @@
 
 function uniq(arr) {
     // Напишите код здесь
+
+    const uniq = Array.from(new Set(arr))
+    return uniq
+
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

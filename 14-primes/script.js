@@ -7,7 +7,18 @@
 */
 
 function primes(num) {
-    // Напишите код здесь
+    const del = []
+    const primes = []
+
+    for (let i = 2; i <= num; i++) {
+      if (!del[i]) {
+        primes.push(i);
+        for (let j = i * 2; j <= num; j += i) {
+              del[j] = true;
+        }
+      }
+    }
+return primes;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

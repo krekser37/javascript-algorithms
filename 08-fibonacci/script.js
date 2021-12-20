@@ -10,8 +10,23 @@
 
 function fibonacci(n) {
     // Напишите код здесь
+  if (n !== 0) {
+  let a=0,
+    b=1;
+    for (let i = 3; i <= n; i ++) {
+        [a, b] = [b, a + b];
+    }
+    return b;
+} 
+else {
+    return n;
 }
-
+}
 // Протестируйте решение, вызывая функцию с разными аргументами:
-
+console.log(fibonacci(0));
+console.log(fibonacci(1));
+console.log(fibonacci(2));
+console.log(fibonacci(3));
 console.log(fibonacci(4)); // 2. Четвёртое число последовательности — двойка (0, 1, 1, 2)
+
+// Здравствуйте, для 0 возвращает 0. Но проверка пишет ошибку. Я не понимаю, что должна возращать функция. Подскажите, пожалуйста.
